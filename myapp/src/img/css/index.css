@@ -1,0 +1,89 @@
+@font-face {
+	font-family: "Beer Money";
+	src: url("../fonts/beer-money.ttf") format("truetype");
+}
+
+html {
+	font-size: 15px;
+	line-height: 160%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Beer Money", decorative;
+	color: white;
+}
+
+p {
+	font-family: 'Gabriela', serif;
+	margin-bottom: 0;
+}
+
+header .Logo,
+footer .Logo {
+	filter: invert(1);
+	transition: all 0.25s;
+}
+
+header .Logo:hover,
+footer .Logo:hover {
+	transform: scale(1.05) rotate(-20deg);
+}
+
+header .Logo {
+	width: 100%;
+}
+
+footer .Logo {
+	width: 75%;
+}
+
+section {
+	padding: 25px 0;
+	padding-top: 50px;
+	box-shadow: 0 0 10px rgb(216, 189, 35);
+	min-height: 100vh;
+
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1,
+.section-title {
+	font-size: 2rem;
+	text-transform: uppercase;
+	color: #000;
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.ArrowTop {
+	position: fixed;
+	right: 25px;
+	bottom: 70px;
+
+	width: 50px;
+	height: 50px;
+	border: none;
+	background-color: transparent;
+	background-image: url("../img/arrow-top.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+
+	transition: all 0.25s;
+}
+
+.ArrowTop:hover {
+	transform: scale(1.1);
+	filter: hue-rotate(90deg);
+}
+
+@media(min-width: 1300px) {
+	.container {
+		max-width: 1280px;
+	}
+}

@@ -1,0 +1,8 @@
+.Intro {
+	background-image: url("../img/intro-bg.jpg");
+	background-position: 0 0;
+}
+
+.Intro .section-title {
+	color: white;
+}
